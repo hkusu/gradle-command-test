@@ -1,0 +1,1 @@
+https://www.notion.so/yumemi/Gradle-557c48a4186a4d4aac5ae37c6eaf3a6c の実験用リポジトリ（private）
