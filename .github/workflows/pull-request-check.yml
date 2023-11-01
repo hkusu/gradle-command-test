@@ -1,0 +1,20 @@
+name: Pull Request Check
+
+on:
+  pull_request:
+  merge_group:
+
+jobs:
+  check:
+    name: PR Check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      - name: Set up Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'zulu'
+          java-version: '17'
